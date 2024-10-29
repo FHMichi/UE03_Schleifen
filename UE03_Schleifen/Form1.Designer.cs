@@ -32,6 +32,8 @@
             label1 = new Label();
             label2 = new Label();
             button2 = new Button();
+            label3 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -48,7 +50,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(412, 75);
+            label1.Location = new Point(410, 82);
             label1.Name = "label1";
             label1.Size = new Size(38, 50);
             label1.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(883, 82);
+            label2.Location = new Point(875, 82);
             label2.Name = "label2";
             label2.Size = new Size(38, 50);
             label2.TabIndex = 3;
@@ -66,7 +68,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(516, 75);
+            button2.Location = new Point(521, 75);
             button2.Name = "button2";
             button2.Size = new Size(338, 74);
             button2.TabIndex = 2;
@@ -74,11 +76,33 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(1336, 75);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 50);
+            label3.TabIndex = 5;
+            label3.Text = "?";
+            // 
+            // button3
+            // 
+            button3.Location = new Point(982, 68);
+            button3.Name = "button3";
+            button3.Size = new Size(338, 74);
+            button3.TabIndex = 4;
+            button3.Text = "do while loop";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1429, 789);
+            ClientSize = new Size(1654, 789);
+            Controls.Add(label3);
+            Controls.Add(button3);
             Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(label1);
@@ -95,5 +119,7 @@
         private Label label1;
         private Label label2;
         private Button button2;
+        private Label label3;
+        private Button button3;
     }
 }
